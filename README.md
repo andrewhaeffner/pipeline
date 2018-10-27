@@ -35,10 +35,10 @@ cd src
 git clone https://github.com/ethz-asl/maplab.git --recursive
 git clone https://github.com/ethz-asl/maplab_dependencies --recursive
 cd maplab
-git checkout 220b210e80cf145d1c7a04b53de0b80da3acbe9f
+git checkout pre_release_public/july-2018
 cd ..
 cd maplab_dependencies
-git checkout deb89f4d39f2a08dd3de81a8878e0a37e89b8ec8
+git checkout pre_release_public/july-2018
 
 ```
 
