@@ -21,7 +21,7 @@ ccache --max-size=10G
 
 - Create catkin workspace (if none exists.) For example:
 ```
-export ROS_VERSION=kinetic #(Ubuntu 16.04: kinetic, Ubuntu 14.04: indigo)
+export ROS_VERSION=melodic #(Ubuntu 16.04: kinetic, Ubuntu 14.04: indigo)
 export CATKIN_WS=~/maplab_ws
 mkdir -p $CATKIN_WS/src
 cd $CATKIN_WS
