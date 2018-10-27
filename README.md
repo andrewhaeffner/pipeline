@@ -3,6 +3,8 @@
 
 - Install ROS Kinetic.
 - Install maplab framework dependencies:
+
+- NOTE: oN xAVIER WE DID CLANG-FORMAT-3.9 instead of 3.8
 ```
 sudo apt install autotools-dev ccache doxygen dh-autoreconf git liblapack-dev libblas-dev libgtest-dev libreadline-dev libssh2-1-dev pylint clang-format-3.8 python-autopep8 python-catkin-tools python-pip python-git python-setuptools python-termcolor python-wstool libatlas3-base --yes
 
