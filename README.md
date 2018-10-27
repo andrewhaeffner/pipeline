@@ -30,7 +30,19 @@ catkin config --cmake-args -DCMAKE_BUILD_TYPE=Release
 cd src
 ```
 
-- Clone this repository recursively in the src directory:
+- In src, recursively clone maplab and maplab dependencies:
+```
+git clone https://github.com/ethz-asl/maplab.git --recursive
+git clone https://github.com/ethz-asl/maplab_dependencies --recursive
+cd maplab
+git checkout 220b210e80cf145d1c7a04b53de0b80da3acbe9f
+cd ..
+cd maplab_dependencies
+git checkout deb89f4d39f2a08dd3de81a8878e0a37e89b8ec8
+
+```
+
+- NO! Clone this repository recursively in the src directory:
 ```
 cd src
 git clone <this-respository.git> --recursive
