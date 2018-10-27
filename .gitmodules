@@ -1,3 +1,6 @@
 [submodule "maplab"]
 	path = maplab
 	url = https://github.com/ethz-asl/maplab.git
+[submodule "maplab_dependencies"]
+	path = maplab_dependencies
+	url = https://github.com/ethz-asl/maplab_dependencies.git
