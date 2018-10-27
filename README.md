@@ -34,13 +34,9 @@ cd src
 
 - In src, recursively clone maplab and maplab dependencies:
 ```
-git clone https://github.com/ethz-asl/maplab.git --recursive
-git clone https://github.com/ethz-asl/maplab_dependencies --recursive
-cd maplab
-git checkout pre_release_public/july-2018
-cd ..
-cd maplab_dependencies
-git checkout pre_release_public/july-2018
+git clone --single-branch -b pre_release_public/july-2018 https://github.com/ethz-asl/maplab.git --recursive
+git clone --single-branch -b pre_release_public/july-2018 https://github.com/ethz-asl/maplab_dependencies --recursive
+
 
 ```
 
@@ -52,7 +48,7 @@ git clone <this-respository.git> --recursive
 
 - catkin build:
 ```
-catkin build maplab ???rovioli???
+catkin build maplab
 ```
 
 - Run pipeline with different configurations.
