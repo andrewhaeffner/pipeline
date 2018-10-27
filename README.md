@@ -40,12 +40,6 @@ git clone --single-branch -b pre_release_public/july-2018 https://github.com/eth
 
 ```
 
-- NO! Clone this repository recursively in the src directory:
-```
-cd src
-git clone <this-respository.git> --recursive
-```
-
 - catkin build:
 ```
 catkin build maplab
