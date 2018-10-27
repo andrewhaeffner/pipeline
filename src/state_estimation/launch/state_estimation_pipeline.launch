@@ -5,5 +5,5 @@
   <arg name="map_output_folder" default="rovio_map_output"/>
 
   <node pkg="rovioli" type="rovioli" name="odometry_pipeline" respawn="true"
-    args="--alsologtostderr=1 --v=2 --ncamera_calibration=&quot;$(arg camera_configuration)&quot; --imu_parameters_maplab=&quot;$(arg imu_configuration)&quot; --save_map_folder=&quot;$(arg map_output_folder)&quot;--optimize_map_to_localization_map=false --datasource_type=&quot;rostopic&quot;" />
+    args="--alsologtostderr=1 --v=2 --ncamera_calibration=&quot;$(arg camera_configuration)&quot; --imu_parameters_maplab=&quot;$(arg imu_configuration)&quot; --save_map_folder=&quot;$(arg map_output_folder)&quot; --optimize_map_to_localization_map=false --datasource_type=&quot;rostopic&quot;" />
 </launch>

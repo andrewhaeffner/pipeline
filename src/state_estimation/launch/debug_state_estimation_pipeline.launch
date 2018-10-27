@@ -1,0 +1,12 @@
+<launch>
+  <arg name="rviz_configuration" default="$(find state_estimation)/config/rviz_debug_config.rviz" />
+  <arg name="pipeline_location" default="$(find state_estimation)/launch/state_estimation_pipeline.launch" />
+  <arg name="dataset_location" default="$(find state_estimation)/data_sets/MH_01_easy.bag" />
+
+  <include file="$(arg pipeline_location)" />
+
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(arg rviz_configuration)" />
+
+  <node pkg="rosbag" type="play" name="rosbag_data_feed" args="$(arg dataset_location)" />
+
+</launch>
